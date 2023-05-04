@@ -1,5 +1,5 @@
 ## BiLSTM Cloudfill Project ##
-These are the supplementary and coding files associated with the paper "Deep neural network approach to spatiotemporal gap-filling for cloud-affected sea-surface temperature maps" by Stephanie Baker, Zhi Huang, and Bronson Philippa. [Citation details to come]. Data files are hosted on CloudStor: [Link to be added when published]
+These are the supplementary and coding files associated with the paper "Lightweight Neural Network For Spatiotemporal Filling of Data Gaps in Sea Surface Temperature Images" by Stephanie Baker, Zhi Huang, and Bronson Philippa. [Citation details to come].
 
 ## Code pipeline
 This code includes the full pipeline from data preprocessing through to model training through to image filling. The order of use is as follows: 
