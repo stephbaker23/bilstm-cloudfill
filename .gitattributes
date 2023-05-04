@@ -1,0 +1,2 @@
+NCFiles/TestingData8020.nc filter=lfs diff=lfs merge=lfs -text
+NCFiles/TrainingData8020.nc filter=lfs diff=lfs merge=lfs -text
