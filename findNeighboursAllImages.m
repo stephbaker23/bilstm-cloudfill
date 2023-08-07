@@ -3,8 +3,8 @@ function findNeighboursAllImages()
 % CHECK ALL OF THIS BEFORE RUNNING
 outDir % = Directory for storing outputs
 outFile % = Filename prefix for outputs
-dataFilename %=  Path to TerainingDataFrom2019.nc (for training) or to TestingDataFrom2020.nc (for testing)
-targetFilename % = Path to TestingTargestFrom2019.nc (for training) or to TestingTargetsFrom2020.nc (for testing)
+dataFilename %=  Path to TrainingDataFrom2019.nc (for training) or to TestingDataFrom2020.nc (for testing)
+trainingFilename % = Path to TestingTargetFrom2019.nc (for training) or to TestingTargetsFrom2020.nc (for testing)
 allFilename % = Path to H08SST_Jul2019_Jun2020.nc (for training) or to H08SST_Jul2020_Jun2021.nc (for testing)
 
 numClouds = 13;
@@ -133,7 +133,7 @@ for dayIndex = 1:366
             % more than that
             for i = 1:length(relevantPixelsX)
                 allNeighbourDistances = sqrt((relevantPixelsX(i) - allNeighbours.x).^2 + ...
-                    (relevantPixelsY(i) - allNeighbours.y).^2;
+                    (relevantPixelsY(i) - allNeighbours.y).^2);
                 
                 
                 % Set up arrays with default values for missing nums
