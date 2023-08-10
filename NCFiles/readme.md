@@ -1,5 +1,5 @@
 # File overview
-This folder contains the NetCDF files that are used for all training and testing. They were built by taking cloud-free images and augmenting them with a bunch of cloud masks.
+This folder contains the NetCDF files that are used for all training and testing. They were built by taking cloud-free images and augmenting them with real cloud masks.
 
 These were the files that were processed by the nearest neighbour code to generate the bulk CSV files.
 
@@ -15,4 +15,4 @@ Contains the cloudy images for testing. Dimensions are as above.
 ### TestingTargets8020.nc
 Contains the clear images for use as testing targets. Dimensions are as above.
 
-**Note:** You can use functions such as ncdisp(filename) and ncread(filename, attribute) in Matlab to get a feel for the contents of these files.
+**Note:** You can use functions such as ncdisp(filename) and ncread(filename, attribute) in Matlab to get an understanding of the contents of these files.
