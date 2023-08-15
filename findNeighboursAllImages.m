@@ -4,7 +4,7 @@ function findNeighboursAllImages()
 outDir % = Directory for storing outputs
 outFile % = Filename prefix for outputs
 dataFilename %=  Path to TrainingDataFrom2019.nc (for training) or to TestingDataFrom2020.nc (for testing)
-trainingFilename % = Path to TestingTargetFrom2019.nc (for training) or to TestingTargetsFrom2020.nc (for testing)
+targetFilename % = Path to TestingTargetFrom2019.nc (for training) or to TestingTargetsFrom2020.nc (for testing)
 allFilename % = Path to H08SST_Jul2019_Jun2020.nc (for training) or to H08SST_Jul2020_Jun2021.nc (for testing)
 
 numClouds = 13;
@@ -17,16 +17,16 @@ outputFileID = fopen(outputFilename, 'w');
 
 % Load required files - training data + all SST for finding temporal
 % neighbours
-trainingSst = ncread(trainingFilename, 'sst');
-trainingTime = ncread(trainingFilename, 'time');
+trainingSst = ncread(dataFilename, 'sst');
+trainingTime = ncread(dataFilename, 'time');
 allSst = ncread(allFilename, 'sst');
 allTime = ncread(allFilename, 'time');
 targetSst = ncread(targetFilename, 'sst');
 targetTime = ncread(targetFilename, 'time');
 
 % Lat and long are same for all images
-longitude = ncread(trainingFilename, 'longitude');
-latitude = ncread(trainingFilename, 'latitude');
+longitude = ncread(dataFilename, 'longitude');
+latitude = ncread(dataFilename, 'latitude');
 
 % File counter
 recordCounter = 1;
