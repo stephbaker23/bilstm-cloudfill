@@ -1,5 +1,7 @@
 ## BiLSTM Cloudfill Project ##
-These are the supplementary and coding files associated with the paper "Lightweight Neural Network For Spatiotemporal Filling of Data Gaps in Sea Surface Temperature Images" by Stephanie Baker, Zhi Huang, and Bronson Philippa. [Citation details to come].
+These are the supplementary and coding files associated with the following publication, which should be cited by any works using the data or code:
+
+S. Baker, Z. Huang and B. Philippa, "Lightweight Neural Network for Spatiotemporal Filling of Data Gaps in Sea Surface Temperature Images," in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-10, 2023, Art no. 4204310, doi: 10.1109/TGRS.2023.3273575.
 
 ## Code pipeline
 This code includes the full pipeline from data preprocessing through to model training through to image filling. The order of use is as follows: 
